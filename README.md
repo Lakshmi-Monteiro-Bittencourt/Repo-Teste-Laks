@@ -45,7 +45,7 @@ Tabelas (MySQL)
 <br>
 
 * Lama_Users
-<br>
+
 id VARCHAR(255) e chave primária
 <br>
 name VARCHAR(255) e não-nulo
@@ -55,7 +55,7 @@ password VARCHAR(255) e não-nulo
 role ENUM “NORMAL” ou “ADMIN” com padrão “NORMAL” não-nulo
 
 * Lama_Shows
-<br>
+
 id VARCHAR(255) e chave primária
 <br>
 band VARCHAR(255) e não-nulo
@@ -83,13 +83,13 @@ GetAllUsers
 ```
 Instalando as dependências:
 ```
-npm install:
-* Instala todas as dependências listadas no package.json.
+* npm install:
+Instala todas as dependências listadas no package.json.
 <br>
 
-Criando o arquivo .env:
+* Criando o arquivo .env:
 <br>
-* Criar o arquivo .env e configurar com as informações de seu banco de dados.
+Criar o arquivo .env e configurar com as informações de seu banco de dados.
 <br>
 
 PORT: 3003
@@ -120,6 +120,7 @@ Se executado uma segunda vez, ele dropa as tabelas e reseta os dados mockados
 Estabelece a conexão com o banco de dados e reinicia automaticamente o servidor localhost toda a vez que o projeto for alterado e salvo.
 
 ## 1. Cadastro de usuário
+
 Método: POST
 Caminho: /users/signup
 Entrada: name, email, password
@@ -127,8 +128,8 @@ Saída: mensagem de cadastro de um novo usuário. Ao final, retorna um token de 
 Validações e regras de negócio:
 name, email e password devem ser fornecidos e serem do tipo string
 name deve possuir ao menos 3 caracteres, enquanto password ao menos 6 caracteres
-email deve ter um formato válido e único, não podendo repetir no banco de dados
-<br>
+email deve ter um formato válido e único, não podendo repetir no banco de dado
+
 ## 2. Acesso de usuário
 Método: POST
 Caminho: /users/login
@@ -139,8 +140,9 @@ email e password devem ser fornecidos e serem do tipo string
 password deve possuir ao menos 6 caracteres
 email deve ter um formato válido
 O usuário com o email fornecido deve existir no sistema
-<br>
+
 ## 3. Cria um novo show (protegido)
+
 Método POST
 Caminho /shows
 Entrada token de acesso, band, startsAt
@@ -149,7 +151,7 @@ Validações e regras de negócio:
 a data do show não pode ser anterior ao início do festival (5 de dezembro)
 só pode existir um show por dia durante o evento
 Observação: este endpoint deve ser acessível apenas aos admins.
-<br>
+
 ## 4. Buscar shows
 Método: GET
 Caminho: /shows
@@ -157,7 +159,7 @@ Entrada: nenhuma
 Saída uma lista com todos os shows agendados
 Validações e regras de negócio:
 dentre as informações dos shows, deve existir também o número de ingressos disponíveis (iniciando em 5000)
-<br>
+
 ## 5. Criação da reserva de ingresso (protegido)
 Método: POST
 Caminho: /shows/:id
@@ -168,7 +170,7 @@ id do show reservado deve existir no banco de dados
 uma mesma pessoa só pode reservar um ingresso para cada show
 deve ser respeitado o limite de 5000 ingressos por show
 Observação: este endpoint deve ser acessível apenas aos admins.
-<br>
+
 ## 6. Remoção da reserva de ingresso (protegido)
 Método: DELETE
 Caminho:/shows/:id
@@ -208,5 +210,5 @@ Mencione as ferramentas que você usou para criar seu projeto
 ## INTEGRANTE
 Perfil      | Link do perfil no GITHUB
 --------- | ------
-[<img src="https://media-exp1.licdn.com/dms/image/C4D03AQGF3EBuZED7DA/profile-displayphoto-shrink_800_800/0/1660667280345?e=1670457600&v=beta&t=irvfDUXElwXnTMD00dSdmYek-dVhEPzgs0foKTri62E" width="75px;"/>](https://github.com/Lakshmi-Monteiro-Bittencourt) | [Desenvolvedor 1](https://github.com/desenvolvedor1)
+[<img src="https://media-exp1.licdn.com/dms/image/C4D03AQGF3EBuZED7DA/profile-displayphoto-shrink_800_800/0/1660667280345?e=1670457600&v=beta&t=irvfDUXElwXnTMD00dSdmYek-dVhEPzgs0foKTri62E" width="75px;"/>](https://github.com/Lakshmi-Monteiro-Bittencourt) | [Laksmin Monteiro Bittencourt]
 
