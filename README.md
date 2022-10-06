@@ -210,5 +210,5 @@ Mencione as ferramentas que você usou para criar seu projeto
 ## INTEGRANTE
 Perfil      | Link do perfil no GITHUB
 --------- | ------
-[<img src="https://media-exp1.licdn.com/dms/image/C4D03AQGF3EBuZED7DA/profile-displayphoto-shrink_800_800/0/1660667280345?e=1670457600&v=beta&t=irvfDUXElwXnTMD00dSdmYek-dVhEPzgs0foKTri62E" width="75px;"/>](https://github.com/Lakshmi-Monteiro-Bittencourt) | [Laksmin Monteiro Bittencourt]
+[<img src="https://media-exp1.licdn.com/dms/image/C4D03AQGF3EBuZED7DA/profile-displayphoto-shrink_800_800/0/1660667280345?e=1670457600&v=beta&t=irvfDUXElwXnTMD00dSdmYek-dVhEPzgs0foKTri62E" width="75px;"/>](https://github.com/Lakshmi-Monteiro-Bittencourt) | [Laksmin Monteiro Bittencourt - (https://github.com/Lakshmi-Monteiro-Bittencourt)]
 
